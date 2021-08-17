@@ -10,7 +10,7 @@
  * @return {number}
  */
 var lengthOfLongestSubstring = function(s) {
-    // ***使用存储字符串版本
+    // 存储字符串
     // let a = '', m = 0
     // for (let i = 0; i < s.length; i++) {
     //     let j = a.indexOf(s[i])
@@ -23,7 +23,7 @@ var lengthOfLongestSubstring = function(s) {
     // }
     // return m
 
-    // ***将字符串存储变为指针版本
+    // 双指针
     let l = 0, e = 0, m = 0
     for (let i = 0; i < s.length; i++) {
         let j = s.slice(l, e).indexOf(s[i])
